@@ -2,7 +2,7 @@ const blogs = ["one", "two", "three", "four", "five", "six"]
 const recentBlogPosts = document.getElementById("recent-blog-posts")
 const viewMore = document.getElementById("view-more")
 const siteLogo = document.getElementById("site-logo")
-
+const article = document.getElementById("article")
 
 
 function renderBlog() {
@@ -18,11 +18,17 @@ function renderBlog() {
 }
 
 
-renderBlog()
+
 
 siteLogo.addEventListener("click", function() {
     location.href = "index.html"
 })
+
+if (article) {
+    article.addEventListener("click", function() {
+        location.href = "article.html"
+    })
+}
 
 if (viewMore) {
     viewMore.addEventListener("click", function() {
@@ -33,5 +39,6 @@ if (viewMore) {
     })
     }
 
+renderBlog()
 
 document.getElementById("copyright").innerHTML = `&copy ${new Date().getFullYear()}`
