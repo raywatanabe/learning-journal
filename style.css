@@ -3,5 +3,120 @@
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+/* typography */
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.article {
+    color: #eee;
+    text-shadow: 2px 2px 2px black;
+}
+
+.date {
+    text-transform: uppercase;
+    margin: 0.5em 0 0;
+}
+
+h3 {
+    margin: 0.5em 0 0;
+    font-size: 2rem;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+/* layout */
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: first baseline;
+    margin: 0 1em;
+}
+
+.title-container,
+.header-link-container {
+    display: flex;
+    align-items: first baseline;
+    gap: 0.75em;
+}
+
+.article {
+    background-image: url("/images/code-glasses.jpg");
+    background-size: cover;
+    min-height: 300px;
+    min-width: 240px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0.5em 1em ;
+}
+
+@media (min-width: 760px) {
+    .article {
+        min-height: 400px;
+    }
+}
+
+.article h3,
+.article p {
+    max-width: 400px;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 2px;
+}
+
+.recent-blog-posts {
+    margin: 1em;
+    display: grid;
+    gap: 1em;  
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+}
+
+#view-more {
+    display: none;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: black;
+    color: #eee;
+    margin: 0;
+    padding: 1em;
+    min-width: 240px;
+    text-align: center;
+}
+
+/* media queries */
+
+@media (max-width: 528px) {
+    #view-more {
+        display: block;
+    }
+
+    #blog-four,
+    #blog-five,
+    #blog-six {
+        display: none;
+    }
 }
