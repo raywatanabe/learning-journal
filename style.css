@@ -45,7 +45,7 @@ header {
     margin: 0 1em;
 }
 
-.title-container,
+.site-logo,
 .header-link-container {
     display: flex;
     align-items: first baseline;
