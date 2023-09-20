@@ -84,9 +84,13 @@ img {
 
 .recent-blog-posts {
     margin: 1em;
-    display: grid;
-    gap: 1em;  
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;   
+}
+
+.blog-post{
+    flex: 1 240px;
 }
 
 #view-more {
