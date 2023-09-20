@@ -1,0 +1,1 @@
+render html content rather than having multiple html files

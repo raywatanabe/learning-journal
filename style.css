@@ -53,7 +53,7 @@ header {
 }
 
 .article {
-    background-image: url("/images/code-glasses.jpg");
+    background-image: url("images/code-glasses.jpg");
     background-size: cover;
     min-height: 300px;
     min-width: 240px;
