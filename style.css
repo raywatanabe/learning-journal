@@ -82,6 +82,11 @@ img {
     border-radius: 2px;
 }
 
+.recent-blog-title {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
 .recent-blog-posts {
     margin: 1em;
     display: flex;
@@ -111,6 +116,23 @@ footer {
     text-align: center;
 }
 
+/* about page*/
+
+.main-content {
+    padding: 1em;
+}
+
+.about-intro {
+    margin-bottom: 2.5em;
+}
+
+.pfp {
+    min-width: 180px;
+    max-width: 180px;
+    max-height: 180px;
+    border-radius: 50%;
+}
+
 /* media queries */
 
 @media (max-width: 528px) {
@@ -122,5 +144,18 @@ footer {
     #blog-five,
     #blog-six {
         display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-intro {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        padding: 0 2em;
+    }
+
+    .about-content {
+        padding: 0 5em;
     }
 }
