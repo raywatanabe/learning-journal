@@ -62,9 +62,10 @@ header {
     flex-direction: column;
     justify-content: end;
     padding: 0.5em 1em ;
+    cursor: pointer;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
     .article {
         min-height: 400px;
     }
@@ -133,6 +134,15 @@ footer {
     border-radius: 50%;
 }
 
+/* article page */
+
+.article-img {
+    margin: 2em auto;
+    border-radius: 2px;
+    max-height: 200px;
+    object-position: bottom;
+}
+
 /* media queries */
 
 @media (max-width: 528px) {
@@ -155,7 +165,13 @@ footer {
         padding: 0 2em;
     }
 
-    .about-content {
+    .about-content,
+    .article-content {
         padding: 0 5em;
+    }
+
+    .article-img {
+        max-height: 300px;
+        width: 90%;
     }
 }
